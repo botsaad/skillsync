@@ -1,0 +1,129 @@
+/* General Profile Container Styling */
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  color: #333;
+}
+
+/* Profile Header Styling */
+.profile-header {
+  font-size: 1.8rem;
+  color: #00e5ff; /* Bright cyan for better visibility */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Stronger shadow for visibility */
+  text-align: center; /* Center-align the header */
+}
+
+/* General Label Styling for All Headings */
+.profile-container label {
+  font-weight: bold;
+  color: #ffffff; /* Bright white for maximum visibility */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 0.3rem 0.5rem; /* Add padding around the text */
+  border-radius: 5px; /* Rounded corners for labels */
+  display: inline-block; /* Ensure proper label placement */
+  font-size: 1.2rem; /* Slightly larger font size */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
+  margin-bottom: 0.5rem; /* Spacing below the label */
+  margin-top: 1rem; /* Space above the label for separation */
+  transition: color 0.3s ease; /* Smooth transition for hover or focus effects */
+}
+
+/* Styling for Inputs and Textareas */
+.profile-container input,
+.profile-container textarea {
+  font-size: 1rem;
+  color: #333; /* Neutral text color for inputs */
+  border: 1px solid #ccc; /* Border for clarity */
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  resize: vertical; /* Allow resizing for textareas */
+  transition: border-color 0.3s ease;
+}
+
+/* On Focus Styling */
+.profile-container input:focus,
+.profile-container textarea:focus {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  outline: none;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.navigation-buttons button {
+  background-color: #00bfa6;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #00897b;
+}
+
+/* Image Preview Styling */
+.file-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .profile-header {
+    font-size: 1.5rem;
+  }
+
+  .profile-container label {
+    font-size: 1rem;
+  }
+}
